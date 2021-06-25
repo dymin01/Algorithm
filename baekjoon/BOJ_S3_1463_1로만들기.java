@@ -15,7 +15,7 @@ public class BOJ_S3_1463_1로만들기 {
 		 dp[2] = 1;
 		 dp[3] = 1;
 		 for(int i = 4; i <= N; i++) {
-			 dp[i] =dp[i-1];
+			 dp[i] =dp[i-1] + 1;
 			 
 			 if(i % 2 == 0) {
 				 dp[i] = Math.min(dp[i], dp[i/2] + 1);
@@ -25,7 +25,7 @@ public class BOJ_S3_1463_1로만들기 {
 			 }
 			 
 		 }
-		 System.out.println(Arrays.toString(dp));
+//		 System.out.println(Arrays.toString(dp));
 		 System.out.println(dp[N]);
 
 	}
