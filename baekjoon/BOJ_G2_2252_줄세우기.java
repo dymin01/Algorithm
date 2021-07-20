@@ -80,7 +80,6 @@ public class BOJ_G2_2252_줄세우기 {
 		topologicalSort();
 		
 		System.out.println(answer.toString());
-
 	}
 
 	private static void topologicalSort() {
