@@ -20,7 +20,6 @@ import java.io.InputStreamReader;
  * <풀이 요약>
  * KMP 알고리즘 정리 하고 문제 다시 풀기
  * 
- * 
  */
 
 public class BOJ_G4_16916_부분문자열 {
