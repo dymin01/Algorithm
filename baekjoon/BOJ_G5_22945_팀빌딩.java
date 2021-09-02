@@ -19,7 +19,7 @@ import java.util.StringTokenizer;
  * 1 <= xi <= 10,000
  * 
  * <풀이 요약>
- * 머리가 안돈다.
+ * 머리가 안돈다...
  * 
  * 1. left와 right로 양쪽 끝 사람을 팀으로 생각하고 팀을 만들어 능력치를 구한다.
  * 2. answer과 비교해서 최대값을 저장한다.
@@ -40,20 +40,24 @@ public class BOJ_G5_22945_팀빌딩 {
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < N; i++) {
+			// 능력치를 입력받는다.
 			list[i] = Integer.parseInt(st.nextToken());
 		}
 		
 		int answer = 0;
 		
+		// 가장 왼쪽
 		int left = 0;
+		// 가장 오른쪽
 		int right = N-1;
 		
-		for(int i = 0; i < N-2; i++) {
-		
+		// 2명이상 무조건 모여야 한다.
+		while(right != left) {
+			// 팀 능력치
 			int teamAbility = (right - left - 1) * Math.min(list[left], list[right]);
-			
+			// 능력치 최대값
 			answer = Math.max(answer, teamAbility);
-			
+			// 작은값을 바꿔 더 큰 값이 나오는지 확인한다.
 			if(list[left] < list[right]) {
 				left++;
 			}
