@@ -13,7 +13,8 @@ import java.util.StringTokenizer;
  * - 과장된 이야기를 할 수 있는 파티 개수의 최댓값을 구하라
  * 
  * 문제 유형
- * 
+ * - union find
+ * - 부분집합
  * 
  * 제약 사항
  * N, M은 50이하의 자연수
@@ -21,6 +22,8 @@ import java.util.StringTokenizer;
  * 1 <= 각 파티에 오는 사람의 수 <= 50
  * 
  * <풀이 요약>
+ * 
+ * 구선생님의 도움을 받아 풀었습니다.
  * 
  * 
  */
